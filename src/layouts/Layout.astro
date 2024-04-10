@@ -18,8 +18,8 @@ const resolvedImageWithDomain = new URL(
 const { title } = Astro.props;
 
 const makeTitle = title
-  ? title + " | " + "Astroship"
-  : "Astroship - Starter Template for Astro with Tailwind CSS";
+  ? title + " | " + "MultiServicios"
+  : "MultiServicios Hoteleros";
 ---
 
 <!DOCTYPE html>
@@ -33,7 +33,7 @@ const makeTitle = title
     <!-- <link rel="preload" as="image" href={src} alt="Hero" /> -->
     <SEO
       title={makeTitle}
-      description="Astroship is a starter website template for Astro built with TailwindCSS."
+      description="Multiservicios Hoteleros es una empresa especializada en gestión de compras de elementos de OS&E y FF&E para proyectos hoteleros y hoteles en operación."
       canonical={canonicalURL}
       twitter={{
         creator: "@surjithctly",
@@ -44,11 +44,11 @@ const makeTitle = title
         basic: {
           url: canonicalURL,
           type: "website",
-          title: `Astroship - Starter Template for Astro`,
+          title: `Multiservicios - Brindamos un servicio a la medida caracterizado por una variedad de productos de alta calidad`,
           image: resolvedImageWithDomain,
         },
         image: {
-          alt: "Astroship Homepage Screenshot",
+          alt: "Multiservicios Homepage",
         },
       }}
     />
