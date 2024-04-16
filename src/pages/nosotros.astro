@@ -1,0 +1,132 @@
+---
+import { Picture } from "astro:assets";
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+
+import heroImage from "assets/hero.png";
+import teamImage from "assets/team.jpg";
+
+
+---
+
+<Layout title="Nosotros">
+  <section
+  class="relative bg-fixed bg-[url(../src/assets/nosotros.jpg)] bg-cover bg-center bg-no-repeat mb-20"
+>
+  <div
+    class="absolute inset-0 bg-black/20  from-black/20 to-black/20  bg-gradient-to-l"
+  >
+
+</div>
+
+<div
+  class="relative mx-auto max-w-screen-xl text-white px-4 py-32 sm:px-6 lg:flex lg:h-[800px] lg:items-center lg:px-8"
+>
+<Container>
+<Sectionhead >
+  <Fragment slot="title" >Nosotros</Fragment>
+  <Fragment slot="desc">Construyendo Experiencias Únicas en la Industria Hotelera</Fragment>
+</Sectionhead>
+</Container>
+</div>
+  </section>
+
+
+  <Container>
+   
+
+    <div class="flex flex-col gap-3 px-8 mx-auto max-w-4xl mt-16">
+      <h2 class="font-bold mb-4 text-center text-3xl text-gray-800">
+        ¿Quiénes somos?
+      </h2>
+      <p class="text-lg leading-relaxed text-slate-500 text-justify">
+        Multiservicios Hoteleros es una empresa especializada en gestión
+         de compras de elementos de OS&E y FF&E para proyectos hoteleros
+          y hoteles en operación. 
+      </p>
+      <p class="text-lg leading-relaxed text-slate-500 text-justify">
+        Brindamos un servicio a la medida caracterizado por una variedad
+         de productos de alta calidad, excelente servicio y cumplimiento 
+         en los tiempos de entrega. Ofreciendo asesorías por expertos de 
+         las marcas que representamos.
+      </p>
+      <p class="text-lg leading-relaxed text-slate-500 text-justify">
+        Buscamos ser la solución de garantía de ahorro y calidad tanto
+         para las operaciones como para los proyectos en desarrollo de
+          Caribe Hospitality, así como para las empresas hermanas de
+           esta y público en general.
+      </p>
+    </div>
+
+    <main
+    class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-12 md:pb-12">
+    <div class="py-6 px-8 md:px-0 md:order-1  md:block ">
+      <Picture
+      class="rounded-2xl"
+        src={heroImage}
+        alt="Logo MSH"
+        widths={[200, 400, 600]}
+        sizes="(max-width: 800px) 100vw, 620px"
+        loading="eager"
+        format="avif"
+      />
+    </div>
+    <div class="px-8">
+      <h2 class="font-bold text-3xl pb-4 text-gray-800">
+        Historia y Experiencia
+      </h2>
+      <p class="text-lg leading-relaxed text-slate-500 text-justify">
+        Multiservicios Hoteleros nace como una oportunidad de ahorro y 
+        servicio para las operaciones hoteleras de Caribe Hospitality, 
+        empresa que cuenta con 14 operaciones hoteleras en funcionamiento 
+        y una en construcción a lo largo de México, Centroamérica y el Caribe.
+
+      </p>
+      
+      
+    </div>
+  </main>
+
+
+  <section
+    class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-6 md:pb-12">
+    <div class="px-8 md:order-1 ">
+      <h2 class="font-bold text-3xl pb-4 text-gray-800">
+        Nuestro Equipo
+      </h2>
+      <p class="text-lg leading-relaxed text-slate-500 text-justify">
+        Equipo interdisciplinario de arquitectos, administradores y especialistas en logística.
+        
+      </p>
+      <br>
+      <p class="text-lg leading-relaxed text-slate-500 text-justify">
+        A cada proyecto se le asigna un líder de proyecto y está acompañado de un equipo dependiendo de la fase del proyecto.  
+        
+      </p>
+      <br>
+      <p class="text-lg leading-relaxed text-slate-500 text-justify">
+        El equipo cuenta con amplia experiencia en la compra de elementos de OS&E y FF&E para cadenas como Marriott, Hyatt e IHG. 
+      </p>
+      
+    </div>
+    <div class="py-6 px-8 md:px-0 md:block ">
+      <Picture
+      class="rounded-2xl"
+        src={teamImage}
+        alt="Logo MSH"
+        widths={[200, 400, 600]}
+        sizes="(max-width: 800px) 100vw, 620px"
+        loading="eager"
+        format="avif"
+      />
+    </div>
+  </section>
+
+ 
+  </Container>
+
+  <Container>
+   
+  </Container>
+</Layout>

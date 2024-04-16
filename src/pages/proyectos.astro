@@ -1,0 +1,162 @@
+---
+import { getCollection } from "astro:content";
+import { Picture } from "astro:assets";
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+
+import heroImage from "assets/hero.png";
+import ACchen from "assets/ACchen.jpeg";
+import ACKit from "assets/ACKit.jpeg";
+import CourtyardAlajuela from "assets/CourtyardAlajuela.png";
+import CourtyardBar from "assets/CourtyardBar.png";
+import CourtyardBarbados from "assets/CourtyardBarbados.jpeg";
+import HyattP from "assets/HyattP.png";
+
+
+---
+
+<Layout title="Proyectos">
+  <section
+  class="relative bg-fixed bg-[url(../src/assets/project.jpg)] bg-cover bg-bottom bg-no-repeat mb-20"
+>
+  <div
+    class="absolute inset-0 bg-black/20  from-black/20 to-black/20  bg-gradient-to-l"
+  >
+
+</div>
+
+<div
+  class="relative mx-auto max-w-screen-xl text-white px-4 py-32 sm:px-6 lg:flex lg:h-[800px] lg:items-center lg:px-8"
+>
+<Container>
+<Sectionhead >
+  <Fragment slot="title" >Proyectos</Fragment>
+  <Fragment slot="desc">Construyendo Experiencias Únicas en la Industria Hotelera</Fragment>
+</Sectionhead>
+</Container>
+</div>
+  </section>
+
+  <Container>
+    <div class="flex flex-col gap-3 px-8 mx-auto max-w-4xl mt-16">
+      <h2 class="font-bold mb-4 text-center text-3xl text-gray-800">
+        Explora Nuestros Proyectos
+      </h2>
+      <p class="text-lg leading-relaxed text-slate-500 text-justify">
+        En Multiservicios Hoteleros, hemos tenido el privilegio de 
+        colaborar en proyectos de renombre para <strong>cadenas hoteleras 
+        reconocidas como Marriott y Hyatt.</strong> Desde el diseño y amueblamiento 
+        del <strong>AC Marriott Escazú Costa Rica </strong> hasta la creación de 
+        ambientes distinguidos en el Hyatt Centric Escazú, nuestros
+         proyectos abarcan una amplia gama de servicios.
+
+      </p>
+      <p class="text-lg leading-relaxed text-slate-500 text-justify">
+        Destacamos también nuestro trabajo en las habitaciones del Courtyard
+         Alajuela Costa Rica y las áreas públicas del Courtyard Barbados, donde nuestra
+         atención al detalle y compromiso con la calidad se reflejan en cada
+          espacio.
+      </p>
+      <p class="text-lg leading-relaxed text-slate-500 text-justify">
+        Explora nuestra galería para descubrir cómo transformamos visiones
+         en realidad, ofreciendo soluciones personalizadas y asesoramiento
+          experto en gestión de compras para proyectos hoteleros de alta
+          exigencia. Estamos aquí para convertir tus ideas en experiencias
+           excepcionales.
+      </p>
+    </div>
+
+  </Container>
+  <main>
+    <div class="container mx-auto px-5 py-2 lg:px-32 lg:pt-24">
+      <div class="md:-m-1 md:flex md:flex-wrap md:-m-2">
+        <div class="md:flex md:w-1/2 md:flex-wrap">
+          <div class="md:w-1/2 p-1 md:p-2">
+            
+
+              <Picture
+                class="block h-full w-full rounded-lg object-cover object-center"
+                src={ACchen}
+                alt="AC Kitchen"
+                widths={[200, 400, 600]}
+                sizes="(max-width: 800px) 100vw, 620px"
+                loading="eager"
+                format="avif"
+              />
+          </div>
+          <div class="w-1/2 p-1 md:p-2">
+          
+
+              <Picture
+                class="block h-full w-full rounded-lg object-cover object-center"
+                src={ACKit}
+                alt="AC Kitchen"
+                widths={[200, 400, 600]}
+                sizes="(max-width: 800px) 100vw, 620px"
+                loading="eager"
+                format="avif"
+              />
+          </div>
+          <div class="w-full p-1 md:p-2">
+            
+
+              <Picture
+                class="block h-full w-full rounded-lg object-cover object-center"
+                src={CourtyardAlajuela}
+                alt="Courtyard Alajuela"
+                widths={[200, 400, 600]}
+                sizes="(max-width: 800px) 100vw, 620px"
+                loading="eager"
+                format="avif"
+              />
+          </div>
+        </div>
+        <div class="flex w-1/2 flex-wrap">
+          <div class="w-full p-1 md:p-2">
+            
+
+              <Picture
+                class="block h-full w-full rounded-lg object-cover object-center"
+                src={CourtyardBar}
+                alt="Courtyard Barbados"
+                widths={[200, 400, 600]}
+                sizes="(max-width: 800px) 100vw, 620px"
+                loading="eager"
+                format="avif"
+              />
+          </div>
+          <div class="w-1/2 p-1 md:p-2">
+            
+
+              <Picture
+                class="block h-full w-full rounded-lg object-cover object-center"
+                src={CourtyardBarbados}
+                alt="Courtyard Barbados"
+                widths={[200, 400, 600]}
+                sizes="(max-width: 800px) 100vw, 620px"
+                loading="eager"
+                format="avif"
+              />
+          </div>
+          <div class="w-1/2 p-1 md:p-2">
+           
+
+
+              <Picture
+                class="block h-full w-full rounded-lg object-cover object-center"
+                src={HyattP}
+                alt="Hyatt Centric"
+                widths={[200, 400, 600]}
+                sizes="(max-width: 800px) 100vw, 620px"
+                loading="eager"
+                format="avif"
+              />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </main>
+
+

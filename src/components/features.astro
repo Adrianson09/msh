@@ -4,59 +4,47 @@ import { Icon } from "astro-icon";
 
 const features = [
   {
-    title: "Bring Your Own Framework",
+    title: "Optimizamos tu logística y transporte",
     description:
-      "Build your site using React, Svelte, Vue, Preact, web components, or just plain ol' HTML + JavaScript.",
-    icon: "bx:bxs-briefcase",
+      "Alianzas con proveedores reconocidos, tanto de productos como de servicios logísticos y de transporte internacional.",
+    icon: "bx:bxs-truck",
   },
   {
-    title: "100% Static HTML, No JS",
+    title: "Tu equipo de expertos en hotelería",
     description:
-      "Astro renders your entire page to static HTML, removing all JavaScript from your final build by default.",
+      "Equipo Multidisciplinario especializado en la industria de hospitalidad.",
     icon: "bx:bxs-window-alt",
   },
   {
-    title: "On-Demand Components",
+    title: "Proveedores confiables para tu éxito",
     description:
-      "Need some JS? Astro can automatically hydrate interactive components when they become visible on the page.  ",
+      "Conocimiento de proveedores que cumplen con los requerimientos de las principales cadenas hoteleras, incluyendo solicitud de precio y  revisión de costos en la cadena de valor. ",
     icon: "bx:bxs-data",
   },
   {
-    title: "Broad Integration",
+    title: "Asesoramos en contratos y exoneraciones",
     description:
-      "Astro supports TypeScript, Scoped CSS, CSS Modules, Sass, Tailwind, Markdown, MDX, and any other npm packages.",
-    icon: "bx:bxs-bot",
+      "Experiencia en el manejo de contratos turísticos y proceso de exoneración de impuestos.",
+    icon: "bx:bxs-building",
   },
-  {
-    title: "SEO Enabled",
-    description:
-      "Automatic sitemaps, RSS feeds, pagination and collections take the pain out of SEO and syndication. It just works!",
-    icon: "bx:bxs-file-find",
-  },
-  {
-    title: "Community",
-    description:
-      "Astro is an open source project powered by hundreds of contributors making thousands of individual contributions.",
-    icon: "bx:bxs-user",
-  },
+
 ];
 ---
 
 <div class="mt-16 md:mt-0">
   <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
-    Everything you need to start a website
+    Tu socio estratégico para el éxito de tu hotel
   </h2>
   <p class="text-lg mt-4 text-slate-600">
-    Astro comes batteries included. It takes the best parts of state-of-the-art
-    tools and adds its own innovations.
+    Soluciones integrales en contratos, exoneraciones, proveedores, logística y más.
   </p>
 </div>
 
-<div class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-16">
+<div class="grid sm:grid-cols-2 md:grid-cols-2 mt-16 gap-16">
   {
     features.map((item) => (
       <div class="flex gap-4 items-start">
-        <div class="mt-1 bg-black rounded-full  p-2 w-8 h-8 shrink-0">
+        <div class="mt-1 bg-teal-900 rounded-full  p-2 w-8 h-8 shrink-0">
           <Icon class="text-white" name={item.icon} />
         </div>
         <div>
