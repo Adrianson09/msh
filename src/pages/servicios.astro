@@ -3,6 +3,8 @@ import Layout from "@layouts/Layout.astro";
 import Container from "@components/container.astro";
 import Sectionhead from "@components/sectionhead.astro";
 import PricingCard from "@components/pricing.astro";
+import Features from "@components/features.astro";
+import Logos from "@components/logos.astro";
 
 const pricing = [
   {
@@ -64,7 +66,19 @@ const pricing = [
 ];
 ---
 
-<Layout title="Pricing">
+<Layout title="Servicios">
+  <section
+  class="relative bg-fixed bg-[url(/nosotros.jpg)] bg-cover bg-center bg-no-repeat mb-20"
+>
+  <div
+    class="absolute inset-0 bg-black/50  from-black/50 to-black/50  bg-gradient-to-l"
+  >
+
+</div>
+
+<div
+  class="relative mx-auto max-w-screen-xl text-white px-4 py-32 sm:px-6 lg:flex lg:h-[800px] lg:items-center lg:px-8"
+>
   <Container>
     <Sectionhead>
       <Fragment slot="title">Servicios</Fragment>
@@ -72,9 +86,18 @@ const pricing = [
         S
       </Fragment>
     </Sectionhead>
-
+    
     <div class="grid md:grid-cols-3 gap-10 mx-auto max-w-screen-lg mt-12">
       {pricing.map((item) => <PricingCard plan={item} />)}
     </div>
+  </div>
+</section>
+
+<Container>
+  
+  <Features/>
+  <Logos/>
+</Container>
   </Container>
+
 </Layout>
