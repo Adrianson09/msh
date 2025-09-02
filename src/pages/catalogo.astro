@@ -1,0 +1,35 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+---
+
+<Layout title="Catálogo">
+    <Container>
+  <div class="h-40 bg-white  m-20 p-20">
+
+    <h1 class="text-center">Categorías de suministro para Hoteles</h1>
+  </div>
+  <section class="mb-20">
+    <section class="grid md:grid-cols-3 gap-10  mx-auto max-w-4xl mt-16">
+      <div class="border p-5 rounded-lg hover:shadow-lg transition-shadow duration-300">
+        <h2 class="font-medium text-xl text-gray-800 mb-3">Mobiliario</h2>
+        <p class="text-slate-500">
+          Sillas, mesas, escritorios, camas, armarios, muebles de exterior, y más.      
+        </p>
+      </div>        
+        <div class="border p-5 rounded-lg hover:shadow-lg transition-shadow duration-300">
+            <h2 class="font-medium text-xl text-gray-800 mb-3">Equipos Electrónicos</h2>
+            <p class="text-slate-500">
+            Televisores, sistemas de sonido, equipos de climatización, y más.
+            </p>    
+
+            </div>
+            <div class="border p-5 rounded-lg hover:shadow-lg transition-shadow duration-300">
+                <h2 class="font-medium text-xl text-gray-800 mb-3">Suministros de Limpieza</h2>
+                <p class="text-slate    -500">      
+                Productos de limpieza, equipos de lavandería, y más.
+                </p>        
+                </div>
+                </section>
+
+  </Container>
